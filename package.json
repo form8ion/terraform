@@ -74,5 +74,8 @@
     "rollup": "4.17.2",
     "rollup-plugin-auto-external": "2.0.0",
     "vitest": "1.5.3"
+  },
+  "dependencies": {
+    "make-dir": "^4.0.0"
   }
 }
