@@ -1,0 +1,8 @@
+_extends: .github
+repository:
+  name: terraform
+  description: >-
+    form8ion plugin for projects that manage infrastructure as code with
+    terraform
+  homepage: https://npm.im/@form8ion/terraform
+  private: false
