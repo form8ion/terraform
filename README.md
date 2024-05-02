@@ -1,6 +1,6 @@
 # terraform
 
-form8ion plugin for projects that manage infrastructure as code with terraform
+form8ion plugin for projects that manage infrastructure as code with [terraform](https://www.terraform.io/)
 
 <!--status-badges start -->
 
