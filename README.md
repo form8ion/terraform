@@ -32,7 +32,7 @@ form8ion plugin for projects that manage infrastructure as code with [terraform]
 ### Installation
 
 ```sh
-$ npm install @form8ion/terraform
+$ npm install @form8ion/terraform --save-prod
 ```
 
 ### Example
