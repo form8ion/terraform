@@ -76,6 +76,6 @@
     "vitest": "1.5.3"
   },
   "dependencies": {
-    "make-dir": "^4.0.0"
+    "make-dir": "^5.0.0"
   }
 }
