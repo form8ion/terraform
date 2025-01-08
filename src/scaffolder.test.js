@@ -5,10 +5,12 @@ import any from '@travi/any';
 import {when} from 'jest-when';
 
 import {scaffold as scaffoldVersion} from './version/index.js';
+import {scaffold as scaffoldHcl} from './hcl/index.js';
 import scaffold from './scaffolder.js';
 
 vi.mock('make-dir');
 vi.mock('./version/index.js');
+vi.mock('./hcl/index.js');
 
 describe('scaffolder', () => {
   it('should scaffold terraform', async () => {
@@ -18,5 +20,6 @@ describe('scaffolder', () => {
 
     expect(await scaffold({projectRoot})).toEqual({});
     expect(scaffoldVersion).toHaveBeenCalledWith({terraformDirectory: createdTerraformDirectory});
+    expect(scaffoldHcl).toHaveBeenCalledWith({terraformDirectory: createdTerraformDirectory});
   });
 });
