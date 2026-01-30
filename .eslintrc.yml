@@ -2,10 +2,5 @@ root: true
 
 extends:
   - '@form8ion'
+  - '@form8ion/vitest'
   - '@form8ion/cucumber'
-
-overrides:
-  - files:
-      - vitest.config.js
-    rules:
-      import/no-unresolved: off
