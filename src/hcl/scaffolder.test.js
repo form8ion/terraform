@@ -12,6 +12,6 @@ describe('hcl scaffolder', () => {
 
     await scaffoldHcl({terraformDirectory});
 
-    expect(fs.writeFile).toHaveBeenCalledWith(`${terraformDirectory}/main.tf`, '');
+    expect(fs.writeFile).toHaveBeenCalledWith(`${terraformDirectory}/main.tf`, 'terraform {}');
   });
 });
