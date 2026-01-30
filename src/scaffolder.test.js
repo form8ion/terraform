@@ -19,7 +19,7 @@ describe('scaffolder', () => {
     const createdTerraformDirectory = any.string();
     when(makeDirectory).calledWith(`${projectRoot}/terraform`).thenResolve(createdTerraformDirectory);
 
-    expect(await scaffold({projectRoot})).toEqual({});
+    expect(await scaffold({projectRoot})).toEqual({vcsIgnore: {directories: ['.terraform/']}});
     expect(scaffoldVersion).toHaveBeenCalledWith({terraformDirectory: createdTerraformDirectory});
     expect(scaffoldHcl).toHaveBeenCalledWith({terraformDirectory: createdTerraformDirectory});
   });

@@ -4,3 +4,4 @@ Feature: Scaffolder
     When the project is scaffolded
     Then the main file is created
     And the version file is created
+    And local state is ignored from version control

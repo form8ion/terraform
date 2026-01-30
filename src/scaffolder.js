@@ -11,5 +11,5 @@ export default async function ({projectRoot}) {
     scaffoldHcl({terraformDirectory})
   ]);
 
-  return {};
+  return {vcsIgnore: {directories: ['.terraform/']}};
 }
