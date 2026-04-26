@@ -48,7 +48,7 @@
     "access": "public",
     "provenance": true
   },
-  "packageManager": "npm@11.12.1",
+  "packageManager": "npm@11.13.0",
   "devDependencies": {
     "@cucumber/cucumber": "12.8.1",
     "@form8ion/commitlint-config": "2.0.11",
